@@ -2,7 +2,7 @@ import { createStore } from 'vuex'
 
 export default createStore({
   state: {
-    contaPJ: {
+    accountPJ: {
       id: '1',
       value: 39.882
     },
@@ -38,9 +38,10 @@ export default createStore({
         icon: '='
       }
     ],
-    recebimentos: [],
-    pagamentos: [],
-    saldoTotal:  {
+    
+    receipts: [],
+    payments: [],
+    totalBalance:  {
       id: 'w4s7e8d4f455q',
       value: 1
     },
@@ -48,8 +49,8 @@ export default createStore({
   getters: {
   },
   mutations: {
-    alterarSaldoTotal(state, data) {
-      state.saldoTotal = data
+    updatedBalance(state, data) {
+      state.totalBalance = data
       // console.log(data);
     }
   },
