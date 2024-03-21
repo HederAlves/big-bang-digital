@@ -1,18 +1,18 @@
 <template>
-    <div class="navigation-buttons">
-        <BaseButton color="secondary" style="width: 30%" @click="navigate('page1')">
-            Dashboard
-        </BaseButton>
-        <BaseButton color="primary" style="width: 35%" @click="navigate('page2')">
-            Pagamentos
-        </BaseButton>
-        <BaseButton color="primary" style="width: 20%" @click="navigate('page3')">
-            Invoices
-        </BaseButton>
-        <BaseButton color="primary" style="width: 20%" @click="navigate('page4')">
-            Insights
-        </BaseButton>
-    </div>
+  <div class="navigation-buttons">
+    <BaseButton color="secondary" style="width: 30%" @click="navigate('page1')">
+      Dashboard
+    </BaseButton>
+    <BaseButton color="primary" style="width: 35%" @click="navigate('page2')">
+      Pagamentos
+    </BaseButton>
+    <BaseButton color="primary" style="width: 20%" @click="navigate('page3')">
+      Invoices
+    </BaseButton>
+    <BaseButton color="primary" style="width: 20%" @click="navigate('page4')">
+      Insights
+    </BaseButton>
+  </div>
 </template>
 
 <script>
@@ -33,10 +33,11 @@ export default {
 
 <style scoped>
 .navigation-buttons {
-    background: #202027;
-    display: flex;
-    justify-content: space-between;
-    width: 477px;
-    height: 37px;
+  background: #202027;
+  display: flex;
+  justify-content: space-between;
+  width: 47vw;
+  max-width: "477px";
+  height: 37px;
 }
 </style>
