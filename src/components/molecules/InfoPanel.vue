@@ -133,6 +133,7 @@ export default {
 .info-buttons {
     display: flex;
     gap: 10px;
+    margin-top: 50px;
 }
 </style>
 
