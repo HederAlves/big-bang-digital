@@ -29,26 +29,31 @@ const store = createStore({
         id: '1',
         name: "Mercadinho da Cidade",
         value: 10.98,
+        backgroundColor: '#FDFF9D'
       },
       {
         id: '2',
         name: "Tenda Nostra",
         value: 26.38,
+        backgroundColor: '#FF9D9D'
       },
       {
         id: '3',
         name: "Farmácia Um",
         value: 43.17,
+        backgroundColor: '#C8FF9D'
       },
       {
         id: '4',
         name: "Academia Body",
         value: 62.12,
+        backgroundColor: '#AB9DFF'
       },
       {
         id: '5',
         name: "ShopOnline",
         value: 134.24,
+        backgroundColor: '#FF9DEF'
       }
     ],
     payments: [],
