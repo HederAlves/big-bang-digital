@@ -1,9 +1,10 @@
 <template>
   <div>
     <BaseHeader />
-    <div class="layout">
+    <div class="dash-board">
       <InfoPanel />
       <InfoSection />
+      <ListTransactions />
       <ListTransactions />
     </div>
   </div>
@@ -27,7 +28,7 @@ export default {
 </script>
 
 <style scoped>
-.layout {
+.dash-board {
   display: flex;
   flex-wrap: wrap;
   height: 350px;

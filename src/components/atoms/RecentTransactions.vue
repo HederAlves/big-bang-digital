@@ -1,43 +1,42 @@
 <template>
-  <div class="layout">
-    <div class="store">
-      <img src="@/assets/store.svg" />
+  <section class="recent-transactions">
+    <BaseIcon iconType="shop" :backgroundColor="recentTransaction.backgroundColor" />
+    <div class="value-transactions">
+      <p>{{ recentTransaction.name }}</p>
+      <p>R$: {{ recentTransaction.value }}</p>
     </div>
-    <div class="result">
-      <p>{{ recentTransactions.name }}</p>
-      <p>R$: {{ recentTransactions.value }}</p>
-    </div>
-  </div>
+  </section>
 </template>
 
 <script>
+import BaseIcon from './BaseIcon.vue';
+
 export default {
+  components: { BaseIcon },
   name: "RecentTransactions",
   props: {
-    recentTransactions: Object,
+    recentTransaction: Object,
   },
 };
 </script>
 
 <style scoped>
-.layout {
-  margin-top: 10px;
+.recent-transactions {
   display: flex;
-  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
   border-bottom: 1px solid #ccc;
-  padding-bottom: 10px;
+  padding-left: 6px;
 }
 
-.result {
+.value-transactions {
   width: 350px;
   display: flex;
   justify-content: space-between;
-  padding: 8px;
-}
-
-.title {
-  font-size: 20px;
+  padding: 12px 8px;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 30px;
+  line-height: 21px;
 }
 </style>
