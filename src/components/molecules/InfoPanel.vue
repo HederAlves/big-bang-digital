@@ -19,7 +19,7 @@
         <div class="info-buttons">
             <BaseButton color="send" size="lg">
                 <img style="margin-right: 26px" src="@/assets/send.svg" />
-                Enviar mais dinheiro
+                Enviar dinheiro
             </BaseButton>
             <BaseButton color="send" size="sm">+</BaseButton>
         </div>
