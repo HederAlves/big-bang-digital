@@ -11,10 +11,10 @@
 </template>
 
 <script>
-import InfoPanel from '../molecules/InfoPanel.vue';
-import ListTransactions from '../molecules/ListTransactions.vue';
-import BaseHeader from '../organism/BaseHeader.vue';
-import InfoSection from '../organism/InfoSection.vue';
+import InfoPanel from "../molecules/InfoPanel.vue";
+import ListTransactions from "../organism/ListTransactions.vue";
+import BaseHeader from "../organism/BaseHeader.vue";
+import InfoSection from "../organism/InfoSection.vue";
 
 export default {
   name: "HomeDashboard",
