@@ -27,12 +27,12 @@
 </template>
 
 <script>
-import { mapState } from 'vuex';
-import BaseButton from '../atoms/BaseButton.vue';
+import { mapState } from "vuex";
+import BaseButton from "../atoms/BaseButton.vue";
 
 export default {
   components: { BaseButton },
-  name: 'InfoCard',
+  name: "InfoCard",
   props: {
     title: {
       type: String,

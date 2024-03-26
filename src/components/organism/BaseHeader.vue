@@ -9,11 +9,11 @@
 </template>
 
 <script>
-import BaseButton from '../atoms/BaseButton.vue';
-import NavMenu from '../molecules/NavMenu';
+import BaseButton from "../atoms/BaseButton.vue";
+import NavMenu from "../molecules/NavMenu";
 
 export default {
-  name: 'BaseHeader',
+  name: "BaseHeader",
   components: {
     NavMenu,
     BaseButton,
