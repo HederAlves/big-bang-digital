@@ -21,8 +21,8 @@
 import BaseButton from "../atoms/BaseButton.vue"
 
 export default {
-  components: { BaseButton },
   name: "InfoCard",
+  components: { BaseButton },
   props: {
     title: {
       type: String,
@@ -41,7 +41,6 @@ export default {
     color: black;
     width: 351px;
     height: 209px;
-    margin: 10px;
     box-shadow: 0px 7px 30px 0px #00000012;
     background: #ffffff;
 }
