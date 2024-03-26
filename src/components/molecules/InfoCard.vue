@@ -18,11 +18,11 @@
 </template>
 
 <script>
-import BaseButton from '../atoms/BaseButton.vue'
+import BaseButton from "../atoms/BaseButton.vue"
 
 export default {
   components: { BaseButton },
-  name: 'InfoCard',
+  name: "InfoCard",
   props: {
     title: {
       type: String,
