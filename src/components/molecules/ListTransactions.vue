@@ -1,50 +1,42 @@
 <template>
-  <div class="table">
-    <header class="header-table">
-      <img src="@/assets/box.svg" />
-      <h3 style="transactions">Transações recentes</h3>
-      <p class="data-transactions">últimos 7 dias</p>
-      <a href="URL_do_destino" class="link-transactions">ver tudo</a>
-    </header>
-    <RecentTransactions v-for="transaction in $store.state.recentTransactions" :key="transaction.id"
-      :recentTransaction="transaction" />
-  </div>
+  <section class="recent-transactions">
+    <BaseIcon iconType="shop" :backgroundColor="recentTransaction.backgroundColor" />
+    <ul class="value-transactions">
+      <li>{{ recentTransaction.name }}</li>
+      <li>R$: {{ recentTransaction.value }}</li>
+    </ul>
+  </section>
 </template>
 
 <script>
-import RecentTransactions from "../atoms/RecentTransactions.vue";
+import BaseIcon from "../atoms/BaseIcon.vue";
 
 export default {
-  components: { RecentTransactions },
   name: "ListTransactions",
+  components: { BaseIcon },
+  props: {
+    recentTransaction: Object,
+  },
 };
 </script>
 
 <style scoped>
-.table {
-  margin: 26px 98px;
-  padding-bottom: 20px;
-}
-
-.header-table {
+.recent-transactions {
   display: flex;
-  justify-content: center;
-  gap: 12px;
+  justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #B3B3B3;
-  margin-top: 10px;
-  padding-bottom: 16px;
+  gap: 12px;
+  border-bottom: 1px solid #ccc;
+  padding-left: 6px;
 }
 
-.data-transactions {
+.value-transactions {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 8px;
   font-size: 14px;
   font-weight: 500;
-  color: #A3A3A3;
-}
-
-.link-transactions {
-  margin-left: 60px;
-  color: #7986FE;
-  text-decoration-line: none;
+  line-height: 21px;
 }
 </style>
