@@ -31,8 +31,8 @@ import { mapState } from "vuex";
 import BaseButton from "../atoms/BaseButton.vue";
 
 export default {
-  components: { BaseButton },
   name: "InfoCard",
+  components: { BaseButton },
   props: {
     title: {
       type: String,
@@ -54,7 +54,6 @@ export default {
 .info {
     display: flex;
     justify-content: space-around;
-    gap: 70px;
     flex-wrap: wrap;
     color: white;
     width: 100%;
@@ -136,4 +135,3 @@ export default {
     margin-top: 50px;
 }
 </style>
-

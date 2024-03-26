@@ -7,8 +7,8 @@ import { mapState } from "vuex";
 import InfoCard from "../molecules/InfoCard.vue";
 
 export default {
-  components: { InfoCard },
   name: "InfoSection",
+  components: { InfoCard },
   computed: {
     ...mapState(["cardsInfo"])
   }
